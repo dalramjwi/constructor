@@ -1,7 +1,6 @@
-function workThree(a, b) {
-  return {
-    a: a,
-    b: b,
-  };
+function workThree(index, name) {
+  let local = { number: index + 1, name: name };
+
+  return local;
 }
-console.log(workThree("ㅇ", "22"));
+console.log(workThree(0, "ㅇㅇ"));
