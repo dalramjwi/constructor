@@ -3,5 +3,4 @@ function workThree(index, name) {
 
   return local;
 }
-console.log(workThree(0, "ㅇㅇ"));
 module.exports = workThree;
