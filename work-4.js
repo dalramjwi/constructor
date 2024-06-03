@@ -30,8 +30,7 @@ const names = [
 const makeMember = require("./work-3.js");
 // console.log(makeMember(1, "김보미"));
 let arrMembers = [];
-for (let i = 0; i < names.length; i++) {
-  let member = makeMember(i, names[i]);
-  arrMembers.push(member);
-}
+names.forEach((name, index) => {
+  arrMembers.push(makeMember(index, name));
+});
 console.log(arrMembers);
