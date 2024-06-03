@@ -9,14 +9,16 @@ function workOne(a, b) {
   /**동료의 방법
    * localVariable[a] = b;
    */
-  localVariable = {
-    a: a,
-    b: b,
-  };
+  // localVariable = {
+  //   a: a,
+  //   b: b,
+  // };
+  localVariable[a] = a;
+  localVariable[b] = b;
   return localVariable;
 }
 oj = {
   키: "value",
 };
 console.log(workOne("객체 key", "객체 value"));
-console.log(Object.keys(oj));
+// console.log(Object.keys(oj));
