@@ -7,6 +7,7 @@ function workOne(a, b) {
   let localVariable = {};
   if (typeof a === "string") {
     if (typeof b === "string") {
+      //이렇게 조건문 중첩도 가능하지만, $$, || 연산자 혹은 예외 처리 (try, catch, ...finally 등) 사용 가능
       localVariable = { [a]: b };
       /**동료의 방법
        * localVariable[a] = b;
