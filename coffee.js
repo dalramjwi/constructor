@@ -8,11 +8,14 @@ class makeCoffee {
   //* 규격 만들기 : constructor 밖 class 안
   set wondoo(value) {
     if (typeof value === "string") {
-      this._won = value;
+      this._wondoo = value;
     } else {
       console.error("문자열 아님");
     }
   }
+  get wondoo() {
+    return this._wondoo;
+  }
 }
-let test = new makeCoffee("원두", "물", "설탕", "우유");
-console.log(test);
+let test = new makeCoffee("메롱", "물", "설탕", "우유");
+console.log(test.wondoo);
