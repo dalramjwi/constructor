@@ -1,7 +1,7 @@
 function workThree(a, b) {
-  let local = {};
-  local[a] = a;
-  local[b] = b;
-  return local;
+  return {
+    a: a,
+    b: b,
+  };
 }
 console.log(workThree("ㅇ", "22"));
