@@ -38,8 +38,19 @@ class makeCoffee {
   get sugar() {
     return this._sugar;
   }
+  set milk(value) {
+    if (typeof value === "boolean") {
+      this._milk = value;
+    } else {
+      console.error("불리언 아님");
+    }
+  }
+  get milk() {
+    return this._milk;
+  }
 }
-let test = new makeCoffee("메롱", 1, "설탕", "우유");
+let test = new makeCoffee("메롱", 1, true, false);
 console.log(test.wondoo);
 console.log(test.water);
 console.log(test.sugar);
+console.log(test.milk);
