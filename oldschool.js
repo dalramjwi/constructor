@@ -11,5 +11,5 @@ function HyeonRamen(ramenName, ramenWater, addFood) {
   }
 }
 
-let test = HyeonRamen("신라면", "300ml", "고추장");
+let test = HyeonRamen("진라면", "300ml", "고추장");
 console.log(test);
