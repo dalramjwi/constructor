@@ -5,20 +5,29 @@ function workOne(a, b) {
   //* logic : 매개변수 두 개를 받은 다음
   //* logic : return은 객체
   let localVariable = {};
-  localVariable = { [a]: b };
-  /**동료의 방법
-   * localVariable[a] = b;
-   */
-  // localVariable = {
-  //   a: a,
-  //   b: b,
-  // };
-  localVariable[a] = a;
-  localVariable[b] = b;
-  return localVariable;
+  if (typeof a === "string") {
+    if (typeof b === "string") {
+      localVariable = { [a]: b };
+      /**동료의 방법
+       * localVariable[a] = b;
+       */
+      // localVariable = {
+      //   a: a,
+      //   b: b,
+      // };
+      localVariable[a] = a;
+      localVariable[b] = b;
+      return localVariable;
+    } else {
+      console.error("조건 해당되지 않음");
+    }
+  } else {
+    console.error("조건 해당되지 않음");
+  }
+  //* condition : 매개변수 모두 문자열이어야 한다.
 }
 oj = {
   키: "value",
 };
-console.log(workOne("객체 key", "객체 value"));
+console.log(workOne("1", "2"));
 // console.log(Object.keys(oj));
