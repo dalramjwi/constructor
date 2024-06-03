@@ -17,5 +17,5 @@ class ramen {
     }
   }
 }
-let test = new ramen("진매", "물", "치즈");
+let test = new ramen("진순", "물", "치즈");
 console.log(test);
