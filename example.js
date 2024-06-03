@@ -1,4 +1,5 @@
 // * 객체 리터럴에 메서드가 추가된 방식
+//실효성은 없다.
 const first = {
   a: 1,
   b: 2,
@@ -10,6 +11,7 @@ let testFirst = first.add();
 console.log(testFirst);
 
 // * 객체를 리턴하는 일반 함수
+//
 function second(a, b) {
   let result = {};
   result.first = a;
