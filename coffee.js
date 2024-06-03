@@ -14,7 +14,7 @@ class makeCoffee {
     }
   }
   get wondoo() {
-    return this._wondoo;
+    return this._wondoo + "임";
   }
 }
 let test = new makeCoffee("메롱", "물", "설탕", "우유");
